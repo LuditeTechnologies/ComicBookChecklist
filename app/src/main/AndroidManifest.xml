@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luditetechnologies.comicbookchecklist" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".core.ComicBookChecklist_Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".UI.Dashboard"
+            android:label="@string/DashboardName" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.AddPublishersActivity"
+            android:label="@string/UploadPublishers" />
+        <activity
+            android:name=".UI.AddTitlesActivity"
+            android:label="@string/UploadTitlesName" />
+        <activity
+            android:name=".UI.PublisherTest"
+            android:label="@string/test_publishers" >
+        </activity>
+        <activity
+            android:name=".UI.TitleTest"
+            android:label="@string/test_titles" >
+        </activity>
+        <activity
+            android:name=".UI.TitleTestBatman"
+            android:label="@string/title_activity_test_batman_title" >
+        </activity>
+        <activity
+            android:name=".UI.TitleTestSpiderman"
+            android:label="@string/title_activity_test_spiderman_title" >
+        </activity>
+        <activity
+            android:name=".UI.TitleTestAny"
+            android:label="@string/title_activity_title_test_any" >
+        </activity>
+    </application>
+
+</manifest>
