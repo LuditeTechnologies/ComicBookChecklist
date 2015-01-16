@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.luditetechnologies.comicbookchecklist.R;
@@ -29,15 +30,13 @@ public class ListViewAdapter extends BaseAdapter {
         this.context = context;
         this.titleList = titleList;
         inflater = LayoutInflater.from(context);
-        this.arraylist = new ArrayList<IssueTitle>();
-        this.arraylist.addAll(titleList);
         //imageLoader = new ImageLoader(context);
     }
 
     public class ViewHolder {
         TextView title;
-        //TextView publisher;
-        //ImageView cover;
+        TextView publisher;
+        ImageView cover;
     }
 
     @Override
@@ -60,10 +59,8 @@ public class ListViewAdapter extends BaseAdapter {
         if (view == null) {
             holder = new ViewHolder();
             view = inflater.inflate(R.layout.listview_item, null);
-            // Locate the TextViews in listview_item.xml
             holder.title = (TextView) view.findViewById(R.id.titleValue);
-            //holder.publisher = (TextView) view.findViewById(R.id.publisher);
-            // Locate the ImageView in listview_item.xml
+            holder.publisher = (TextView) view.findViewById(R.id.publisherValue);
             //holder.cover = (ImageView) view.findViewById(R.id.cover);
             view.setTag(holder);
         } else {
@@ -71,22 +68,16 @@ public class ListViewAdapter extends BaseAdapter {
         }
         // Set the results into TextViews
         holder.title.setText(titleList.get(position).GetTitle());
-        //holder.publisher.setText(issueList.get(position).GetPublisher());
-        // Set the results into ImageView
+        holder.publisher.setText(titleList.get(position).GetPublisher());
         //imageLoader.DisplayImage(issueList.get(position).getFlag(), holder.flag);
+
         // Listen for ListView Item Click
         view.setOnClickListener(new OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
-                // Send single item click data to SingleItemView Class
                 Intent intent = new Intent(context, SingleItemView.class);
-                // Pass all data title
-                intent.putExtra("title",(titleList.get(position).GetTitle()));
-                // Pass all data publisher
-                //intent.putExtra("publisher",(issueList.get(position).GetPublisher()));
-                // Pass all data population
-                // Pass all data flag
+                intent.putExtra("title", titleList.get(position).GetTitle());
+                intent.putExtra("publisher",titleList.get(position).GetPublisher());
                 //intent.putExtra("flag",(issueList.get(position).getFlag()));
                 // Start SingleItemView Class
                 context.startActivity(intent);
@@ -94,5 +85,4 @@ public class ListViewAdapter extends BaseAdapter {
         });
         return view;
     }
-
 }

@@ -59,12 +59,10 @@ public class TitleTest extends ActionBarActivity {
                     query.setLimit(_queryLimit);
                     query.findInBackground(getAllTitles());
                 } else {
-                    titleList = new ArrayList<IssueTitle>();
+                    titleList = new ArrayList<>();
                     for (ParseObject title : allObjects) {
-//                        IssueTitle map = new IssueTitle();
-                        IssueTitle map = new IssueTitle((String) title.get("objectId"), (String) title.get("name"));
-                        //map.SetTitle((String) title.get("name"));
-                        titleList.add(map);
+                        IssueTitle t = new IssueTitle((String) title.get("objectId"), (String) title.get("name"));
+                        titleList.add(t);
                     }
 
                     listview = (ListView) findViewById(R.id.listview);
@@ -75,8 +73,6 @@ public class TitleTest extends ActionBarActivity {
                 }
             }
         };
-
-
     }
 
     protected void startLoading() {

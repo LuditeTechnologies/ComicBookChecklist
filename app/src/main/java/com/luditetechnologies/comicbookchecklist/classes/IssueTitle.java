@@ -3,8 +3,6 @@ package com.luditetechnologies.comicbookchecklist.classes;
 
 public class IssueTitle {
 
-
-
     public IssueTitle() {
     }
 
@@ -25,7 +23,7 @@ public class IssueTitle {
         _id = id;
     }
 
-    private String _title;
+    private String _title = "Title not set";
 
     public String GetTitle() {
         return _title;
@@ -35,14 +33,14 @@ public class IssueTitle {
         _title = title;
     }
 
-    private Publisher _publisher;
+    private String _publisherName = "Publisher name not set";
 
-    public Publisher GetPublisher() {
-        return _publisher;
+    public String GetPublisher() {
+        return _publisherName;
     }
 
-    public void SetPublisher(Publisher publisher) {
-        _publisher = publisher;
+    public void SetPublisher(String publisherName) {
+        _publisherName = publisherName;
     }
 
     //</editor-fold>
