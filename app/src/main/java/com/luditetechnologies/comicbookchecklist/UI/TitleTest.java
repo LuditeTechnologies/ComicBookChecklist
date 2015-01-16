@@ -116,49 +116,4 @@ public class TitleTest extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-//    // RemoteDataTask AsyncTask
-//    private class RemoteDataTask extends AsyncTask<Void, Void, Void> {
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//
-//            mProgressDialog = new ProgressDialog(TitleTest.this);
-//            mProgressDialog.setTitle("Comic Book Checklist");
-//            mProgressDialog.setMessage("Loading...");
-//            mProgressDialog.setIndeterminate(false);
-//            mProgressDialog.show();
-//        }
-//
-//        @Override
-//        protected Void doInBackground(Void... params) {
-//            // Create the array
-//            issueList = new ArrayList<IssueTitle>();
-//            try {
-//                ParseQuery<ParseObject> query = new ParseQuery<ParseObject>(_titleClassName);
-//                query.orderByAscending("name");
-//                ob = query.find();
-//                for (ParseObject issueTitle : ob) {
-//                    // Locate images in flag column
-//                    //ParseFile image = (ParseFile) issue.get("flag");
-//
-//                    IssueTitle map = new IssueTitle();
-//                    map.SetTitle((String) issueTitle.get("name"));
-//                    issueList.add(map);
-//                }
-//            } catch (Exception e) { //} catch (ParseException e) {
-//                Log.e("Error", e.getMessage());
-//                e.printStackTrace();
-//            }
-//            return null;
-//        }
-
-//        @Override
-//        protected void onPostExecute(Void result) {
-//            listview = (ListView) findViewById(R.id.listview);
-//            adapter = new ListViewAdapter(TitleTest.this, issueList);
-//            listview.setAdapter(adapter);
-//            mProgressDialog.dismiss();
-//        }
-//    }
 }

@@ -70,2798 +70,2799 @@ public class AddPublishersActivity extends ActionBarActivity {
             ORDER BY JavaParseCode
  */
 
+        String name = "name";
 
         //TODO: implement a check to avoid duplicates
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "A LIST COMICS");
+            x.put(name, "A LIST COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "A. SILENT COMICS");
+            x.put(name, "A. SILENT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AAA MILWAUKEE PUBLISHING");
+            x.put(name, "AAA MILWAUKEE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AARDVARK INTERNATIONAL");
+            x.put(name, "AARDVARK INTERNATIONAL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AARDVARK VANAHEIM");
+            x.put(name, "AARDVARK VANAHEIM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AARDVARK-VANAHEIM");
+            x.put(name, "AARDVARK-VANAHEIM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ABACULUS");
+            x.put(name, "ABACULUS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ABERRATION PRESS");
+            x.put(name, "ABERRATION PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ABIO GENESIS PRESS");
+            x.put(name, "ABIO GENESIS PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ABSENCE OF INK");
+            x.put(name, "ABSENCE OF INK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ABSTRACT STUDIO");
+            x.put(name, "ABSTRACT STUDIO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AC COMICS");
+            x.put(name, "AC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ACE COMICS");
+            x.put(name, "ACE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ACG");
+            x.put(name, "ACG");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ACME COMICS");
+            x.put(name, "ACME COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ACTIVE SYNAPSE");
+            x.put(name, "ACTIVE SYNAPSE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ADEPT BOOKS");
+            x.put(name, "ADEPT BOOKS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ADHESIVE COMICS");
+            x.put(name, "ADHESIVE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ADULTS ONLY COMIX");
+            x.put(name, "ADULTS ONLY COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ADVENTURE COMICS");
+            x.put(name, "ADVENTURE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AEON");
+            x.put(name, "AEON");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AIRCEL");
+            x.put(name, "AIRCEL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ALTERNATIVE COMICS");
+            x.put(name, "ALTERNATIVE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ALTERNATIVE PRESS");
+            x.put(name, "ALTERNATIVE PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AM WORKS");
+            x.put(name, "AM WORKS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMAZE INK");
+            x.put(name, "AMAZE INK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMAZING COMICS");
+            x.put(name, "AMAZING COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMERICAN MULE ENTERTAINMENT");
+            x.put(name, "AMERICAN MULE ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMERICA'S BEST COMICS");
+            x.put(name, "AMERICA'S BEST COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMF COMICS");
+            x.put(name, "AMF COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AMRYL ENTERTAINMENT");
+            x.put(name, "AMRYL ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ANARCHY PRESS");
+            x.put(name, "ANARCHY PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ANGEL ENTERTAINMENT");
+            x.put(name, "ANGEL ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ANGUS COMICS");
+            x.put(name, "ANGUS COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ANTARTIC PRESS");
+            x.put(name, "ANTARTIC PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ANUBIS PRESS");
+            x.put(name, "ANUBIS PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "APPLE COMICS");
+            x.put(name, "APPLE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ARIA PRESS");
+            x.put(name, "ARIA PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ARROW COMICS GROUP");
+            x.put(name, "ARROW COMICS GROUP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ART & SOUL COMICS");
+            x.put(name, "ART & SOUL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ARTISAN ENTERTAINMENT");
+            x.put(name, "ARTISAN ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ASTONISH COMICS");
+            x.put(name, "ASTONISH COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ASTRO COMICS");
+            x.put(name, "ASTRO COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ATHLETIC COMICS");
+            x.put(name, "ATHLETIC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ATOM COMICS");
+            x.put(name, "ATOM COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ATOMEKA");
+            x.put(name, "ATOMEKA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ATOMIC PRESS");
+            x.put(name, "ATOMIC PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AUGUST COMICS");
+            x.put(name, "AUGUST COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AUTOCRATIK FOR THE MASSES");
+            x.put(name, "AUTOCRATIK FOR THE MASSES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "AVATAR");
+            x.put(name, "AVATAR");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BAD PRESS LTD");
+            x.put(name, "BAD PRESS LTD");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BARDIC PRESS");
+            x.put(name, "BARDIC PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BASEMENT COMICS");
+            x.put(name, "BASEMENT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BEANWORLD PRESS");
+            x.put(name, "BEANWORLD PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BEARBONES PRESS");
+            x.put(name, "BEARBONES PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BEAVER PRESS");
+            x.put(name, "BEAVER PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BIG BABY COMICS");
+            x.put(name, "BIG BABY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BIG ENTERTAINMENT");
+            x.put(name, "BIG ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BIG GUY COMICS");
+            x.put(name, "BIG GUY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BIG JOLT COMICS");
+            x.put(name, "BIG JOLT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BISHOP PRESS");
+            x.put(name, "BISHOP PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACK BULL");
+            x.put(name, "BLACK BULL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACK DAZE PUBLISHING");
+            x.put(name, "BLACK DAZE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACK DIAMOND EFFECT");
+            x.put(name, "BLACK DIAMOND EFFECT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACK EYE PRODUCTIONS");
+            x.put(name, "BLACK EYE PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACK LACE STUDIOS");
+            x.put(name, "BLACK LACE STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACKBURN COMICS LTD");
+            x.put(name, "BLACKBURN COMICS LTD");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLACKTHORNE PUBLISHING");
+            x.put(name, "BLACKTHORNE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLIND WOLF COMICS");
+            x.put(name, "BLIND WOLF COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLT STUDIOS");
+            x.put(name, "BLT STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BLUE COMICS PRESS");
+            x.put(name, "BLUE COMICS PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BONEYARD PRESS");
+            x.put(name, "BONEYARD PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BOOKMARK PRODUCTIONS");
+            x.put(name, "BOOKMARK PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BRAINSTORM COMICS");
+            x.put(name, "BRAINSTORM COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BRAVURA");
+            x.put(name, "BRAVURA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BRENNER PRESS");
+            x.put(name, "BRENNER PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BROADWAY COMICS");
+            x.put(name, "BROADWAY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BROKEN HALOS");
+            x.put(name, "BROKEN HALOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "BUCCANEER COMICS");
+            x.put(name, "BUCCANEER COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "C & T GRAPHICS");
+            x.put(name, "C & T GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CALIBER COMICS");
+            x.put(name, "CALIBER COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CALLIOPE COMICS");
+            x.put(name, "CALLIOPE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CAPITAL COMICS");
+            x.put(name, "CAPITAL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CARNAL COMICS");
+            x.put(name, "CARNAL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CARTOON BOOKS");
+            x.put(name, "CARTOON BOOKS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CASTLE RAIN");
+            x.put(name, "CASTLE RAIN");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CATALAN COMMUNICATIONS");
+            x.put(name, "CATALAN COMMUNICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CAVEMAN PUBLISHING");
+            x.put(name, "CAVEMAN PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CFD");
+            x.put(name, "CFD");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHANCE ENTERPRISES");
+            x.put(name, "CHANCE ENTERPRISES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHANTING MONKS STUDIOS");
+            x.put(name, "CHANTING MONKS STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHAOS! COMICS");
+            x.put(name, "CHAOS! COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHARLTON COMICS");
+            x.put(name, "CHARLTON COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHARLTON");
+            x.put(name, "CHARLTON");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHEMICAL BRAIN COMICS");
+            x.put(name, "CHEMICAL BRAIN COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CHORAL COMICS");
+            x.put(name, "CHORAL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CLAYPOOL COMICS");
+            x.put(name, "CLAYPOOL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CLUB 408 GRAPHICS");
+            x.put(name, "CLUB 408 GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COLONIA PRESS");
+            x.put(name, "COLONIA PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COM.X");
+            x.put(name, "COM.X");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COMICO");
+            x.put(name, "COMICO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COMICS BY ANSON JEW");
+            x.put(name, "COMICS BY ANSON JEW");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COMICS CONSPIRACY PUBLICATIONS");
+            x.put(name, "COMICS CONSPIRACY PUBLICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COMPANY");
+            x.put(name, "COMPANY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CONCEPTION COMICS");
+            x.put(name, "CONCEPTION COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CONTINUITY COMICS");
+            x.put(name, "CONTINUITY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CONTINUM");
+            x.put(name, "CONTINUM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CORSAIR PUBLISHING");
+            x.put(name, "CORSAIR PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "COWTOWN COMICS");
+            x.put(name, "COWTOWN COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CPL/GANG PUBLISHING");
+            x.put(name, "CPL/GANG PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CRAZY CAT DESIGNS");
+            x.put(name, "CRAZY CAT DESIGNS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CREATIVE FORCE PRODUCTIONS");
+            x.put(name, "CREATIVE FORCE PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CREATIVE FRONTIERS");
+            x.put(name, "CREATIVE FRONTIERS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CROSSGEN");
+            x.put(name, "CROSSGEN");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CRUCIAL COMICS");
+            x.put(name, "CRUCIAL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CRUSADE COMICS");
+            x.put(name, "CRUSADE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CRUSADE OF COMICS");
+            x.put(name, "CRUSADE OF COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "CULT PRESS");
+            x.put(name, "CULT PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "D.B.I.");
+            x.put(name, "D.B.I.");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DANCING ELEPHANT PRESS");
+            x.put(name, "DANCING ELEPHANT PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DARK FANTASIES PRODUCTIONS");
+            x.put(name, "DARK FANTASIES PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DARK HORSE");
+            x.put(name, "DARK HORSE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DARK UTOPIA");
+            x.put(name, "DARK UTOPIA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DARK VISIONS");
+            x.put(name, "DARK VISIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DC AMALGAM");
+            x.put(name, "DC AMALGAM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DC");
+            x.put(name, "DC");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DEAD FLY");
+            x.put(name, "DEAD FLY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DEATH COMICS");
+            x.put(name, "DEATH COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DEE VEE");
+            x.put(name, "DEE VEE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DEFIANT");
+            x.put(name, "DEFIANT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DELL");
+            x.put(name, "DELL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DELTA COMICS");
+            x.put(name, "DELTA COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DOTHENRIDGE PRESS");
+            x.put(name, "DOTHENRIDGE PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DOUBLE DIAMOND PRESS");
+            x.put(name, "DOUBLE DIAMOND PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DRACO");
+            x.put(name, "DRACO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DRACONIAN FEATURES");
+            x.put(name, "DRACONIAN FEATURES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DRAMENON STUDIO");
+            x.put(name, "DRAMENON STUDIO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DRAWN AND QUARTERLY");
+            x.put(name, "DRAWN AND QUARTERLY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DREAMHAVEN PRESS");
+            x.put(name, "DREAMHAVEN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DREAMING CITY COMICS");
+            x.put(name, "DREAMING CITY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DREAMWAVE");
+            x.put(name, "DREAMWAVE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "DZL COMICS");
+            x.put(name, "DZL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EAGLE COMICS");
+            x.put(name, "EAGLE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EBG");
+            x.put(name, "EBG");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ECLIPSE COMICS");
+            x.put(name, "ECLIPSE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ECLIPSE");
+            x.put(name, "ECLIPSE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EDDIE CAMPBELL COMICS");
+            x.put(name, "EDDIE CAMPBELL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EENIEWEENIE COMICS");
+            x.put(name, "EENIEWEENIE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EL CAITAN");
+            x.put(name, "EL CAITAN");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ELITE COMICS");
+            x.put(name, "ELITE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ENTITY COMICS");
+            x.put(name, "ENTITY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EOUCOMICS");
+            x.put(name, "EOUCOMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EPIC COMICS");
+            x.put(name, "EPIC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EPITAPH");
+            x.put(name, "EPITAPH");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EROS COMIX");
+            x.put(name, "EROS COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EROS");
+            x.put(name, "EROS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ETERNITY");
+            x.put(name, "ETERNITY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EVENT");
+            x.put(name, "EVENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "EVIL PROPAGANDA");
+            x.put(name, "EVIL PROPAGANDA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FALSE IDOL STUDIOS");
+            x.put(name, "FALSE IDOL STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTACO ENTERPRISES");
+            x.put(name, "FANTACO ENTERPRISES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTACO");
+            x.put(name, "FANTACO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTACORE PRESS");
+            x.put(name, "FANTACORE PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTAGRAPHICS BOOKS");
+            x.put(name, "FANTAGRAPHICS BOOKS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTAGRAPHICS");
+            x.put(name, "FANTAGRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FANTASY");
+            x.put(name, "FANTASY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FAWCETT");
+            x.put(name, "FAWCETT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FIREMAN PRESS");
+            x.put(name, "FIREMAN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FIRST COMICS");
+            x.put(name, "FIRST COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FIRST PUBLISHING");
+            x.put(name, "FIRST PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FISHWRAP PRESENTS");
+            x.put(name, "FISHWRAP PRESENTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FIVE OCLOCK SHADOW");
+            x.put(name, "FIVE OCLOCK SHADOW");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FLASHPOINT COMICS");
+            x.put(name, "FLASHPOINT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FLEETWAY/QUALITY");
+            x.put(name, "FLEETWAY/QUALITY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FOX KIDS NETWORK");
+            x.put(name, "FOX KIDS NETWORK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FRY VISION");
+            x.put(name, "FRY VISION");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "FULL BLEED");
+            x.put(name, "FULL BLEED");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GALLANT STUDIOS");
+            x.put(name, "GALLANT STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GASP! COMICS");
+            x.put(name, "GASP! COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GAUNTLET COMICS");
+            x.put(name, "GAUNTLET COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GEMSTONE PUBLISHING");
+            x.put(name, "GEMSTONE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GENESIS WEST COMICS");
+            x.put(name, "GENESIS WEST COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GLACIAL PACE PRESS");
+            x.put(name, "GLACIAL PACE PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GOBLIN STUDIOS");
+            x.put(name, "GOBLIN STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GOLD KEY");
+            x.put(name, "GOLD KEY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GOTHIC COMICS");
+            x.put(name, "GOTHIC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GRAPHIC GRAPHIX");
+            x.put(name, "GRAPHIC GRAPHIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GREEN DOOR STUDIOS");
+            x.put(name, "GREEN DOOR STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GREEN MAN PRESS");
+            x.put(name, "GREEN MAN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GROUND ZERO COMICS");
+            x.put(name, "GROUND ZERO COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "GRYPHON RAMPART");
+            x.put(name, "GRYPHON RAMPART");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HALL OF HEROES PRESENTS");
+            x.put(name, "HALL OF HEROES PRESENTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HAMMER AND ANVIL PRESS");
+            x.put(name, "HAMMER AND ANVIL PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HARRIER COMICS");
+            x.put(name, "HARRIER COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HARRIS COMICS");
+            x.put(name, "HARRIS COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HEAD PRESS");
+            x.put(name, "HEAD PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HEAVY INDUSTRIES");
+            x.put(name, "HEAVY INDUSTRIES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HELIKON COMICS");
+            x.put(name, "HELIKON COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HERO ILLUSTRATED");
+            x.put(name, "HERO ILLUSTRATED");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HERO");
+            x.put(name, "HERO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HEROES CONVENTION");
+            x.put(name, "HEROES CONVENTION");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HIGH IMPACT");
+            x.put(name, "HIGH IMPACT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HOLLYWOOD COMICS");
+            x.put(name, "HOLLYWOOD COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HOMAGE COMICS");
+            x.put(name, "HOMAGE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HOT COMICS");
+            x.put(name, "HOT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HURRICANE COMICS");
+            x.put(name, "HURRICANE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "HUSTLER COMIX");
+            x.put(name, "HUSTLER COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "I BOX PUBLISHING");
+            x.put(name, "I BOX PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ICG");
+            x.put(name, "ICG");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ICONOGRAPHIX");
+            x.put(name, "ICONOGRAPHIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "IMAGE");
+            x.put(name, "IMAGE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "IMMORTELLE STUDIOS");
+            x.put(name, "IMMORTELLE STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "IMPACT STUDIOS");
+            x.put(name, "IMPACT STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "IMPACT");
+            x.put(name, "IMPACT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "INDEPENDANT COMICS GROUP");
+            x.put(name, "INDEPENDANT COMICS GROUP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "INNER VISION");
+            x.put(name, "INNER VISION");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "INNOVATION");
+            x.put(name, "INNOVATION");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "INSIGHT STUDIOS");
+            x.put(name, "INSIGHT STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "INSOMNIA COMICS");
+            x.put(name, "INSOMNIA COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "IRONCAT L.L.C.");
+            x.put(name, "IRONCAT L.L.C.");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "JABBERWOCKY GRAPHICS");
+            x.put(name, "JABBERWOCKY GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "JADEMAN");
+            x.put(name, "JADEMAN");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "JITTERBUG PRESS");
+            x.put(name, "JITTERBUG PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "JUMP BACK PRODUCTIONS");
+            x.put(name, "JUMP BACK PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KENZER AND COMPANY");
+            x.put(name, "KENZER AND COMPANY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KING COMICS");
+            x.put(name, "KING COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KING HELL");
+            x.put(name, "KING HELL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KING INK");
+            x.put(name, "KING INK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KITCHEN SINK COMIX");
+            x.put(name, "KITCHEN SINK COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KITCHEN SINK PRESS");
+            x.put(name, "KITCHEN SINK PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KNEE DEEP PRODUCTIONS");
+            x.put(name, "KNEE DEEP PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KNIGHT PRESS");
+            x.put(name, "KNIGHT PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KNOCKABOUT PRODUCTIONS");
+            x.put(name, "KNOCKABOUT PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "KRONOS KOMICS");
+            x.put(name, "KRONOS KOMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LABRYNTH STUDIOS");
+            x.put(name, "LABRYNTH STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LAST GASP");
+            x.put(name, "LAST GASP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LAUGHIG BUDDHA PRESS");
+            x.put(name, "LAUGHIG BUDDHA PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LAUGHING CROW PUBLICATIONS");
+            x.put(name, "LAUGHING CROW PUBLICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LIAR COMICS");
+            x.put(name, "LIAR COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LIGHT SPEED PRESS");
+            x.put(name, "LIGHT SPEED PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LIGHTNING COMICS");
+            x.put(name, "LIGHTNING COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LISNER.COM");
+            x.put(name, "LISNER.COM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LODESTONE PUBLISHING");
+            x.put(name, "LODESTONE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LONDON NIGHT");
+            x.put(name, "LONDON NIGHT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "LOOKING GLASS STUDIOS");
+            x.put(name, "LOOKING GLASS STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "M F ENTERPRISES");
+            x.put(name, "M F ENTERPRISES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MALIBU COMICS");
+            x.put(name, "MALIBU COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MALIBU");
+            x.put(name, "MALIBU");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MANIC PRESS");
+            x.put(name, "MANIC PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MANIFEST DESTINY");
+            x.put(name, "MANIFEST DESTINY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MARBEL");
+            x.put(name, "MARBEL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MARKS GIANT ECONOMY SIZE");
+            x.put(name, "MARKS GIANT ECONOMY SIZE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MARVEL GRAPHIC NOVEL");
+            x.put(name, "MARVEL GRAPHIC NOVEL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MARVEL");
+            x.put(name, "MARVEL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MAVERICK PULP COMICS");
+            x.put(name, "MAVERICK PULP COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MEGATRON COMICS");
+            x.put(name, "MEGATRON COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MERMAID");
+            x.put(name, "MERMAID");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MESIAWARP COMIX");
+            x.put(name, "MESIAWARP COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MIGHTY COMICS GROUP");
+            x.put(name, "MIGHTY COMICS GROUP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MIKE HUNT COMIX");
+            x.put(name, "MIKE HUNT COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MILLENNIUM PUBLICATIONS");
+            x.put(name, "MILLENNIUM PUBLICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MILLENNIUM");
+            x.put(name, "MILLENNIUM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MIRAGE PUBLISHING");
+            x.put(name, "MIRAGE PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MIRAGE");
+            x.put(name, "MIRAGE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MOCK MAN PRESS");
+            x.put(name, "MOCK MAN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MODERN");
+            x.put(name, "MODERN");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MONOLITH GRAPHICS");
+            x.put(name, "MONOLITH GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MONSTER PANTS");
+            x.put(name, "MONSTER PANTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MONSTER");
+            x.put(name, "MONSTER");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MOORDAM COMICS");
+            x.put(name, "MOORDAM COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MULEHIDE GRAPHICS");
+            x.put(name, "MULEHIDE GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "MYSTIC COMICS");
+            x.put(name, "MYSTIC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NANNY GOAT PRODUCTIONS");
+            x.put(name, "NANNY GOAT PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NEC COMICS");
+            x.put(name, "NEC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NEOTECK");
+            x.put(name, "NEOTECK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NEW ENGLAND COMICS");
+            x.put(name, "NEW ENGLAND COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NICOTAT COMICS");
+            x.put(name, "NICOTAT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NO PLAN STUDIOS");
+            x.put(name, "NO PLAN STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NON-DAIRY PUBLISHING");
+            x.put(name, "NON-DAIRY PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NORTHSTAR");
+            x.put(name, "NORTHSTAR");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NOTES");
+            x.put(name, "NOTES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "NOW COMICS");
+            x.put(name, "NOW COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "OCEAN COMICS");
+            x.put(name, "OCEAN COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "OLIO");
+            x.put(name, "OLIO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "OLLIE OLLIE OXEN FREE");
+            x.put(name, "OLLIE OLLIE OXEN FREE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "OLYOPTICS");
+            x.put(name, "OLYOPTICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ONE SHOT PRESS");
+            x.put(name, "ONE SHOT PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ONI PRESS");
+            x.put(name, "ONI PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ONWARD COMICS");
+            x.put(name, "ONWARD COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PAN COMICS");
+            x.put(name, "PAN COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PARADOX");
+            x.put(name, "PARADOX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PARAGRAPHICS");
+            x.put(name, "PARAGRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PC COMIC");
+            x.put(name, "PC COMIC");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PC COMICS");
+            x.put(name, "PC COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PEN AND INK COMICS");
+            x.put(name, "PEN AND INK COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PENNY FARTHING PRESS");
+            x.put(name, "PENNY FARTHING PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PENTHOUSE COMICS");
+            x.put(name, "PENTHOUSE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PENTHOUSE COMIX");
+            x.put(name, "PENTHOUSE COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PEREGRINE COMICS");
+            x.put(name, "PEREGRINE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PEREGRINE ENTERTAINMENT");
+            x.put(name, "PEREGRINE ENTERTAINMENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PIG RUN PRESS");
+            x.put(name, "PIG RUN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PIRANHA PRESS");
+            x.put(name, "PIRANHA PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PLASMA BABY");
+            x.put(name, "PLASMA BABY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "POLITICAL COMICS");
+            x.put(name, "POLITICAL COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PREVIEWS PRESENTS");
+            x.put(name, "PREVIEWS PRESENTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PROGRESSING BACKWARDS");
+            x.put(name, "PROGRESSING BACKWARDS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "PULP");
+            x.put(name, "PULP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "QUALITY COMICS");
+            x.put(name, "QUALITY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RADIO COMIX");
+            x.put(name, "RADIO COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RAE COMIC CO");
+            x.put(name, "RAE COMIC CO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RAISED BROW PUBLICATIONS");
+            x.put(name, "RAISED BROW PUBLICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "REBEL STUDIOS");
+            x.put(name, "REBEL STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RED CIRCLE COMICS");
+            x.put(name, "RED CIRCLE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RED INK");
+            x.put(name, "RED INK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RE-IMAGING COMIC ART");
+            x.put(name, "RE-IMAGING COMIC ART");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RENEGADE PRESS");
+            x.put(name, "RENEGADE PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "REOCCURRING IMAGES");
+            x.put(name, "REOCCURRING IMAGES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RETRO GRAPHIX COMICS");
+            x.put(name, "RETRO GRAPHIX COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "REVOLUTIONARY COMICS");
+            x.put(name, "REVOLUTIONARY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RIP OFF PRESS");
+            x.put(name, "RIP OFF PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RIP-OFF PRESS");
+            x.put(name, "RIP-OFF PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "RISING STAR ENT.");
+            x.put(name, "RISING STAR ENT.");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ROCK-IT COMICS");
+            x.put(name, "ROCK-IT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SABRES EDGE");
+            x.put(name, "SABRES EDGE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SANCTUARY PRESS");
+            x.put(name, "SANCTUARY PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SANDBERG PUBLISHING");
+            x.put(name, "SANDBERG PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SCHISM COMICS");
+            x.put(name, "SCHISM COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SCORCHED EARTH PRODUCTIONS");
+            x.put(name, "SCORCHED EARTH PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SHANAMATION PUBLISHING");
+            x.put(name, "SHANAMATION PUBLISHING");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SHANDA FANTASY ARTS");
+            x.put(name, "SHANDA FANTASY ARTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SHARKBAIT PRESS");
+            x.put(name, "SHARKBAIT PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SICK MIND PRESS");
+            x.put(name, "SICK MIND PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SILLY DADDY");
+            x.put(name, "SILLY DADDY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SILVER HAMMER");
+            x.put(name, "SILVER HAMMER");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SILVERWOLF");
+            x.put(name, "SILVERWOLF");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SIRIUS");
+            x.put(name, "SIRIUS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SIXSIXSIX COMICS");
+            x.put(name, "SIXSIXSIX COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SKY COMICS");
+            x.put(name, "SKY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SLAP HAPPY COMICS");
+            x.put(name, "SLAP HAPPY COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SLAVE LABOR GRAPHICS");
+            x.put(name, "SLAVE LABOR GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SLEEPING GIANT COMICS");
+            x.put(name, "SLEEPING GIANT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SMALL PRESS EXPO");
+            x.put(name, "SMALL PRESS EXPO");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SOUTHWIND PRESS");
+            x.put(name, "SOUTHWIND PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SPECTRUM COMICS");
+            x.put(name, "SPECTRUM COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SPIDERBABY GRAPHIX");
+            x.put(name, "SPIDERBABY GRAPHIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SPOTLIGHT COMICS");
+            x.put(name, "SPOTLIGHT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "STAR REACH COMICS");
+            x.put(name, "STAR REACH COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "STARHEAD COMICS");
+            x.put(name, "STARHEAD COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "STRAW DOG");
+            x.put(name, "STRAW DOG");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SUMITEK COMICS");
+            x.put(name, "SUMITEK COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "SUPERIOR JUNK");
+            x.put(name, "SUPERIOR JUNK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TALIESIN PRESS");
+            x.put(name, "TALIESIN PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TANGENT");
+            x.put(name, "TANGENT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TAPESTRY");
+            x.put(name, "TAPESTRY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TEKNO COMIX");
+            x.put(name, "TEKNO COMIX");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TEN DUCK COMICS");
+            x.put(name, "TEN DUCK COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "THECOMIC");
+            x.put(name, "THECOMIC");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "THE-COMIC.COM");
+            x.put(name, "THE-COMIC.COM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "THINK BLOTS");
+            x.put(name, "THINK BLOTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "THOUGHTS AND IMAGES");
+            x.put(name, "THOUGHTS AND IMAGES");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "THREE FINGER PRINTS");
+            x.put(name, "THREE FINGER PRINTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TIN CUP");
+            x.put(name, "TIN CUP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TOME PRESS");
+            x.put(name, "TOME PRESS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TOO HIP GOTTA GO GRAPHICS");
+            x.put(name, "TOO HIP GOTTA GO GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TOPPS COMICS");
+            x.put(name, "TOPPS COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TOTALLYSTAMPED COMICS");
+            x.put(name, "TOTALLYSTAMPED COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TRIDENT COMICS");
+            x.put(name, "TRIDENT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TRIGON COMICS");
+            x.put(name, "TRIGON COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TROMA");
+            x.put(name, "TROMA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "T-SQUARE GRAPHICS");
+            x.put(name, "T-SQUARE GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TUNDRA");
+            x.put(name, "TUNDRA");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "TWIST AND SHOUT COMICS");
+            x.put(name, "TWIST AND SHOUT COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "UNDERHANDED COMICS");
+            x.put(name, "UNDERHANDED COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VALIANT");
+            x.put(name, "VALIANT");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VANGUARD COMIC PRODUCTION");
+            x.put(name, "VANGUARD COMIC PRODUCTION");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VENUS COMICS");
+            x.put(name, "VENUS COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VEROTIK");
+            x.put(name, "VEROTIK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VINCENT CREATIONS");
+            x.put(name, "VINCENT CREATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VISCERAL");
+            x.put(name, "VISCERAL");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VISUAL ANARCHY");
+            x.put(name, "VISUAL ANARCHY");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VIZ COMICS");
+            x.put(name, "VIZ COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "VORTEX COMICS");
+            x.put(name, "VORTEX COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WALKIE TALKIE");
+            x.put(name, "WALKIE TALKIE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WARP GRAPHICS");
+            x.put(name, "WARP GRAPHICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WARREN MAGAZINE");
+            x.put(name, "WARREN MAGAZINE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WATERMARK");
+            x.put(name, "WATERMARK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WD PUBLICATIONS");
+            x.put(name, "WD PUBLICATIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WEEBEE COMICS");
+            x.put(name, "WEEBEE COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WELLS AND CLARK");
+            x.put(name, "WELLS AND CLARK");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WELSH PUBLISHING GROUP");
+            x.put(name, "WELSH PUBLISHING GROUP");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WEST HAMPTON HOUSE");
+            x.put(name, "WEST HAMPTON HOUSE");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WHAT? COMICS");
+            x.put(name, "WHAT? COMICS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WILD STORM");
+            x.put(name, "WILD STORM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WILDSTORM");
+            x.put(name, "WILDSTORM");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WIMMENS COMIX PRESENTS");
+            x.put(name, "WIMMENS COMIX PRESENTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WIZARD");
+            x.put(name, "WIZARD");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "WOMP PRESENTS");
+            x.put(name, "WOMP PRESENTS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ZERO MAYO STUDIOS");
+            x.put(name, "ZERO MAYO STUDIOS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
         try {
             Thread.sleep(50);
             ParseObject x = new ParseObject(getString(R.string.PublisherClassName));
-            x.put("name", "ZONE PRODUCTIONS");
+            x.put(name, "ZONE PRODUCTIONS");
             x.saveInBackground();
         } catch (InterruptedException e) {
         }
