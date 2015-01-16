@@ -3,6 +3,8 @@ package com.luditetechnologies.comicbookchecklist.classes;
 
 public class IssueTitle {
 
+    //<editor-fold desc="Constructors">
+
     public IssueTitle() {
     }
 
@@ -10,6 +12,9 @@ public class IssueTitle {
         _id = id;
         _title = title;
     }
+
+    //</editor-fold>
+
 
     //<editor-fold desc="Properties">
 

@@ -2,7 +2,9 @@ package com.luditetechnologies.comicbookchecklist.UI;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.luditetechnologies.comicbookchecklist.core.ImageLoader;
@@ -12,8 +14,9 @@ public class SingleItemView extends Activity {
 
     String title;
     String publisher;
+    Image coverImage;
 
-    //ImageLoader imageLoader = new ImageLoader(this);
+    ImageLoader imageLoader = new ImageLoader(this);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class SingleItemView extends Activity {
 
         TextView txtTitle = (TextView) findViewById(R.id.titleValue);
         TextView txtPublisher = (TextView) findViewById(R.id.publisherValue);
+        ImageView imgCover = (ImageView) findViewById(R.id.coverImage);
 
         txtTitle.setText(title);
         txtPublisher.setText(publisher);

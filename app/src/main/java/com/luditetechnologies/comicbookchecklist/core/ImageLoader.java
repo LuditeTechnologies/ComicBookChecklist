@@ -27,8 +27,7 @@ public class ImageLoader {
 
     MemoryCache memoryCache = new MemoryCache();
     FileCache fileCache;
-    private Map<ImageView, String> imageViews = Collections
-            .synchronizedMap(new WeakHashMap<ImageView, String>());
+    private Map<ImageView, String> imageViews = Collections.synchronizedMap(new WeakHashMap<ImageView, String>());
     ExecutorService executorService;
     // Handler to display images in UI thread
     Handler handler = new Handler();
@@ -43,8 +42,9 @@ public class ImageLoader {
     public void DisplayImage(String url, ImageView imageView) {
         imageViews.put(imageView, url);
         Bitmap bitmap = memoryCache.get(url);
-        if (bitmap != null) {imageView.setImageBitmap(bitmap);}
-        else {
+        if (bitmap != null) {
+            imageView.setImageBitmap(bitmap);
+        } else {
             queuePhoto(url, imageView);
             imageView.setImageResource(stub_id);
         }

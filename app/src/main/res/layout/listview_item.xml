@@ -8,36 +8,37 @@
         android:id="@+id/coverImage"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:background="#000000"
-        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_marginRight="6dip"
+        android:background="#000000"
         android:src="@drawable/temp_img" />
 
     <TextView
         android:id="@+id/titleValue"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/coverImage"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:singleLine="true"
-        android:textColor="#ffff6e23"
-        android:textSize="28sp"
-        android:text="TITLE"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/coverImage"
+        android:ellipsize="marquee"
         android:enabled="false"
-        android:ellipsize="marquee" />
+        android:singleLine="true"
+        android:text="TITLE"
+        android:textColor="#ffff6e23"
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/publisherValue"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/coverImage"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/titleValue"
+        android:layout_toRightOf="@id/coverImage"
         android:gravity="center_vertical"
-        android:textColor="#ff2a92ff"
-        android:layout_below="@id/titleValue" />
+        android:text="PUBLISHER"
+        android:textColor="#ff2a92ff" />
 
 </RelativeLayout>
