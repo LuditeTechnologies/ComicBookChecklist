@@ -66,6 +66,13 @@
             android:layout_weight="5"
             android:text="@string/test_titles_any" />
 
+        <Button
+            android:id="@+id/btnTestMarvel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Test Marvel" />
+
     </LinearLayout>
 
 </LinearLayout>

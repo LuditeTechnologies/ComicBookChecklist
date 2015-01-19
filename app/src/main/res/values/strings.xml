@@ -22,9 +22,14 @@
     <string name="title_activity_title_test_spiderman">TitleTestSpiderman</string>
     <string name="title_activity_title_test_any">TitleTestAny</string>
     <string name="test_titles_any">Any</string>
-
     <string name="file_cache_directory">ComicBookChecklist</string>
     <string name="publisherLabel">Publisher</string>
     <string name="loadingMessage">Loading. Please wait...</string>
+    <string name="title_activity_tester">tester</string>
+    <string name="marvel_public_key">bcca9cb9dc7e995fc13914669c1c5083</string>
+    <string name="marvel_private_key">bf3d95747452704076ed5abeae0c54a75862aa71</string>
+    <string name="marvel_api_address">https://gateway.marvel.com/</string>
+    <string name="title_activity_activity_marvel_test">activity_marvel_test</string>
+<string name="marvel_characters_url_base">http://gateway.marvel.com/v1/public/characters</string>
 
 </resources>

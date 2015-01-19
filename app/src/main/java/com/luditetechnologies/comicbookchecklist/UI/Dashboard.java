@@ -156,6 +156,22 @@ public class Dashboard extends ActionBarActivity {
             }
         });
 
+        Button testMarvel = (Button) findViewById(R.id.btnTestMarvel);
+        testMarvel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent testMarvel = new Intent(Dashboard.this, activity_marvel_test.class);
+                    startActivity(testMarvel);
+                } catch (Exception e) {
+                    Vibrator vibratorDildo = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                    vibratorDildo.vibrate(1000);
+
+                    Toast.makeText(getApplicationContext(), "Testing Marvel failed!", Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override

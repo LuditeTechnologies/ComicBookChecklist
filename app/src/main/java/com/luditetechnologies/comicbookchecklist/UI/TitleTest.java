@@ -1,6 +1,8 @@
 package com.luditetechnologies.comicbookchecklist.UI;
 
 import android.app.ProgressDialog;
+import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,14 +21,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TitleTest extends ActionBarActivity {
+public class TitleTest extends ActionBarActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private String _titleClassName;
     private static List<ParseObject> allObjects;
     private int _queryLimit = 1000;
     private int _querySkip = 0;
     protected ProgressDialog proDialog;
-
+    private SwipeRefreshLayout swipeLayout;
     ListView listview;
     ListViewAdapter adapter;
     private List<IssueTitle> titleList = null;
@@ -37,6 +39,14 @@ public class TitleTest extends ActionBarActivity {
         setContentView(R.layout.activity_titles_test);
 
         _titleClassName = getString(R.string.TitleClassName);
+
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
+        swipeLayout.setOnRefreshListener(this);
+        swipeLayout.setColorScheme(android.R.color.holo_green_dark,
+                android.R.color.holo_green_light,
+                android.R.color.black,
+                android.R.color.holo_green_light,
+                android.R.color.holo_green_dark);
 
         startLoading();
 
@@ -55,6 +65,7 @@ public class TitleTest extends ActionBarActivity {
                 if (list.size() == _queryLimit) {
                     _querySkip += _queryLimit;
                     ParseQuery<ParseObject> query = ParseQuery.getQuery(_titleClassName);
+                    query.orderByAscending("name");
                     query.setSkip(_querySkip);
                     query.setLimit(_queryLimit);
                     query.findInBackground(getAllTitles());
@@ -112,4 +123,17 @@ public class TitleTest extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onRefresh() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                allObjects = new ArrayList<>();
+                ParseQuery<ParseObject> query3 = ParseQuery.getQuery(_titleClassName);
+                query3.setLimit(_queryLimit);
+                query3.findInBackground(getAllTitles());
+                swipeLayout.setRefreshing(false);
+            }
+        }, 0);
+    }
 }
