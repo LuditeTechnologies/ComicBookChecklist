@@ -26,7 +26,7 @@ import java.util.List;
 public class activity_marvel_test extends ActionBarActivity implements AsyncResponse {
 
     //<editor-fold desc="Variables">
-    public static final int MAX_CHARACTER_INCREMENT = 10; //TODO: increase back to 100 after development
+    public static final int MAX_CHARACTER_INCREMENT = 100; //TODO: increase back to 100 after development
     private List<MarvelCharacter> _characters = new ArrayList<>();
     protected ProgressDialog proDialog;
     private int _offset = 0;
@@ -178,12 +178,12 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
             }
 
             //TODO: uncomment the next line to get everything. I commented it out during development
-//            if (_characters.size() < _characterTotal) {
-//                _offset += MAX_CHARACTER_INCREMENT;
-//                GetCharacters(_offset);
-//            } else {
-                ShowUi();
-//            }
+           if (_characters.size() < _characterTotal) {
+               _offset += MAX_CHARACTER_INCREMENT;
+               GetCharacters(_offset);
+           } else {
+             ShowUi();
+           }
         } catch (Exception e) {
             e.printStackTrace();
             stopLoading();
