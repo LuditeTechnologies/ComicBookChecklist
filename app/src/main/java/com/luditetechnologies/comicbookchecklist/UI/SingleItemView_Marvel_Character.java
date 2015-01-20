@@ -2,7 +2,6 @@ package com.luditetechnologies.comicbookchecklist.UI;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -32,12 +31,12 @@ public class SingleItemView_Marvel_Character extends Activity {
 
         txtName.setText(_name);
 
-        //try {
+        try {
             if (_imagePath != "" || _imagePath != null) {
                 imageLoader.DisplayImage(_imagePath, thumbNail);
             }
-//        } catch (Exception e) {
-//            Log.e("Error loading character thumbnail", e.getMessage());
-//        }
+        } catch (Exception e) {
+            Log.e("Error loading character thumbnail", e.getMessage());
+        }
     }
 }

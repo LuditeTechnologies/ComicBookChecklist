@@ -37,7 +37,7 @@ public class ImageLoader {
         executorService = Executors.newFixedThreadPool(5);
     }
 
-    final int stub_id = R.drawable.temp_img;
+    final int stub_id = R.drawable.portrait_xlarge_not_available;
 
     public void DisplayImage(String url, ImageView imageView) {
         imageViews.put(imageView, url);

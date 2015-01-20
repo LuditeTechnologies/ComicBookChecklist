@@ -26,7 +26,7 @@ import java.util.List;
 public class activity_marvel_test extends ActionBarActivity implements AsyncResponse {
 
     //<editor-fold desc="Variables">
-    public static final int MAX_CHARACTER_INCREMENT = 100;
+    public static final int MAX_CHARACTER_INCREMENT = 10; //TODO: increase back to 100 after development
     private List<MarvelCharacter> _characters = new ArrayList<>();
     protected ProgressDialog proDialog;
     private int _offset = 0;
@@ -113,14 +113,14 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
         stopLoading();
     }
 
-    private void SetAttrib(String attribText) {
+    private void SetMarvelAttribution(String attributionText) {
         TextView txtMarvelAttribute = (TextView) findViewById(R.id.txtMarvelAttrib);
 
-        if (txtMarvelAttribute.getText() == attribText) {
+        if (txtMarvelAttribute.getText() == attributionText) {
             return;
         }
 
-        txtMarvelAttribute.setText(Html.fromHtml(attribText));
+        txtMarvelAttribute.setText(Html.fromHtml(attributionText));
         txtMarvelAttribute.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
@@ -131,12 +131,21 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
         } catch (Exception e) {
             Log.i("Character generation failed", e.getMessage());
         }
+
         try {
             m.SetThumbnailPath(o.getJSONObject("thumbnail").getString("path"));
         } catch (Exception e) {
             Log.i("No thumbnail", m.GetName());
-            m.SetThumbnailPath("No thumbnail path available");
+            m.SetThumbnailPath(null);
         }
+
+        try {
+            m.SetThumbnailExtension(o.getJSONObject("thumbnail").getString("extension"));
+        } catch (Exception e) {
+            Log.i("No thumbnail extension", m.GetName());
+            m.SetThumbnailExtension(null);
+        }
+
         return m;
     }
 
@@ -162,26 +171,19 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
                 _characterTotal = data.getInt("total");
             }
 
-            SetAttrib(base.getString("attributionHTML"));
+            SetMarvelAttribution(base.getString("attributionHTML"));
 
             for (int i = 0; i < results.length(); i++) {
-                //testing
                 _characters.add(GenerateCharacter(results.getJSONObject(i)));
-                //
-                //MarvelCharacter m = new MarvelCharacter(results.getJSONObject(i).getInt("id"), results.getJSONObject(i).getString("resourceURI"), results.getJSONObject(i).getString("name"));
-                //m.SetThumbnailPath(results.getJSONObject(i).getJSONObject("thumbnail").getString("path"));
-                //_characters.add(m);
             }
 
             //TODO: uncomment the next line to get everything. I commented it out during development
-            //            if (_characters.size() < _characterTotal) {
-            //                _offset += MAX_CHARACTER_INCREMENT;
-            //
-            //
-            //                //GetCharacters(_offset);
-            //            } else {
-            ShowUi();
-            //}
+//            if (_characters.size() < _characterTotal) {
+//                _offset += MAX_CHARACTER_INCREMENT;
+//                GetCharacters(_offset);
+//            } else {
+                ShowUi();
+//            }
         } catch (Exception e) {
             e.printStackTrace();
             stopLoading();

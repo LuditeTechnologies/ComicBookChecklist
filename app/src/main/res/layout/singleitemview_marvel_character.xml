@@ -12,11 +12,11 @@
         android:textColor="#ffff6e23" />
 
     <ImageView
-    android:id="@+id/coverImage"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:contentDescription="Cover Image"
-    android:src="@drawable/temp_img"  />
+        android:id="@+id/characterThumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Character Image"
+        android:src="@drawable/portrait_xlarge_not_available" />
 
 
 </RelativeLayout>

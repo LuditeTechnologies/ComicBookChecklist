@@ -7,12 +7,12 @@
     <ImageView
         android:id="@+id/thumbNail"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="6dip"
         android:background="#000000"
-        android:src="@drawable/temp_img" />
+        android:src="@drawable/portrait_xlarge_not_available" />
 
     <TextView
         android:id="@+id/nameValue"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/coverImage"
+        android:layout_toRightOf="@id/thumbNail"
         android:ellipsize="marquee"
         android:enabled="false"
         android:singleLine="true"
