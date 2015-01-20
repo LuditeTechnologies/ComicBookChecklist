@@ -106,18 +106,38 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
     }
 
     private void ShowUi() {
-        ListView listview = (ListView) findViewById(R.id.listview);
+        ListView lstCharacters = (ListView) findViewById(R.id.lstCharacters);
         CharacterListViewAdapter adapter = new CharacterListViewAdapter(activity_marvel_test.this, _characters);
-        listview.setAdapter(adapter);
+        lstCharacters.setAdapter(adapter);
 
         stopLoading();
     }
 
     private void SetAttrib(String attribText) {
-        TextView txtMarvelAttrib;
-        txtMarvelAttrib = (TextView) findViewById(R.id.txtMarvelAttrib);
-        txtMarvelAttrib.setText(Html.fromHtml(attribText));
-        txtMarvelAttrib.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView txtMarvelAttribute = (TextView) findViewById(R.id.txtMarvelAttrib);
+
+        if (txtMarvelAttribute.getText() == attribText) {
+            return;
+        }
+
+        txtMarvelAttribute.setText(Html.fromHtml(attribText));
+        txtMarvelAttribute.setMovementMethod(LinkMovementMethod.getInstance());
+    }
+
+    private MarvelCharacter GenerateCharacter(JSONObject o) throws JSONException {
+        MarvelCharacter m = null;
+        try {
+            m = new MarvelCharacter(o.getInt("id"), o.getString("resourceURI"), o.getString("name"));
+        } catch (Exception e) {
+            Log.i("Character generation failed", e.getMessage());
+        }
+        try {
+            m.SetThumbnailPath(o.getJSONObject("thumbnail").getString("path"));
+        } catch (Exception e) {
+            Log.i("No thumbnail", m.GetName());
+            m.SetThumbnailPath("No thumbnail path available");
+        }
+        return m;
     }
 
     @Override
@@ -145,24 +165,27 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
             SetAttrib(base.getString("attributionHTML"));
 
             for (int i = 0; i < results.length(); i++) {
-                String thumbnailPath = results.getJSONObject(i).getJSONObject("thumbnail").getString("path");
-                _characters.add(new MarvelCharacter(results.getJSONObject(i).getString("name"), thumbnailPath));
+                //testing
+                _characters.add(GenerateCharacter(results.getJSONObject(i)));
+                //
+                //MarvelCharacter m = new MarvelCharacter(results.getJSONObject(i).getInt("id"), results.getJSONObject(i).getString("resourceURI"), results.getJSONObject(i).getString("name"));
+                //m.SetThumbnailPath(results.getJSONObject(i).getJSONObject("thumbnail").getString("path"));
+                //_characters.add(m);
             }
 
-            if (_characters.size() < _characterTotal) {
-                _offset += MAX_CHARACTER_INCREMENT;
-
-                GetCharacters(_offset);
-
-            }
+            //TODO: uncomment the next line to get everything. I commented it out during development
+            //            if (_characters.size() < _characterTotal) {
+            //                _offset += MAX_CHARACTER_INCREMENT;
+            //
+            //
+            //                //GetCharacters(_offset);
+            //            } else {
+            ShowUi();
+            //}
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            ShowUi();
             stopLoading();
         }
-
-
     }
 
     //</editor-fold>
