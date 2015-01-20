@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,8 +13,8 @@ import com.luditetechnologies.comicbookchecklist.R;
 
 public class SingleItemView_Marvel_Character extends Activity {
 
-    String name;
-    Image coverImage;
+    String _name;
+    String _imagePath;
 
     ImageLoader imageLoader = new ImageLoader(this);
 
@@ -23,12 +24,20 @@ public class SingleItemView_Marvel_Character extends Activity {
         setContentView(R.layout.singleitemview_marvel_character);
 
         Intent i = getIntent();
-        name = i.getStringExtra("name");
+        _name = i.getStringExtra("name");
+        _imagePath = i.getStringExtra("imagePath");
 
         TextView txtName = (TextView) findViewById(R.id.nameValue);
-        ImageView imgCover = (ImageView) findViewById(R.id.coverImage);
+        ImageView thumbNail = (ImageView) findViewById(R.id.thumbNail);
 
-        txtName.setText(name);
+        txtName.setText(_name);
 
+        //try {
+            if (_imagePath != "" || _imagePath != null) {
+                imageLoader.DisplayImage(_imagePath, thumbNail);
+            }
+//        } catch (Exception e) {
+//            Log.e("Error loading character thumbnail", e.getMessage());
+//        }
     }
 }

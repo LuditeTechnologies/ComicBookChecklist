@@ -11,12 +11,12 @@
         android:text="CHARACTER NAME"
         android:textColor="#ffff6e23" />
 
-    <!--<ImageView-->
-    <!--android:id="@+id/coverImage"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:contentDescription="Cover Image"-->
-    <!--android:src="@drawable/temp_img"  />-->
+    <ImageView
+    android:id="@+id/coverImage"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="Cover Image"
+    android:src="@drawable/temp_img"  />
 
 
 </RelativeLayout>

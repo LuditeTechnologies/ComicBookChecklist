@@ -2,11 +2,13 @@ package com.luditetechnologies.comicbookchecklist.core;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.luditetechnologies.comicbookchecklist.R;
@@ -17,21 +19,21 @@ import java.util.List;
 
 public class CharacterListViewAdapter extends BaseAdapter {
 
-    // Declare Variables
     Context context;
     LayoutInflater inflater;
-    //ImageLoader imageLoader;
+    ImageLoader imageLoader;
     private List<MarvelCharacter> characterList = null;
 
     public CharacterListViewAdapter(Context context, List<MarvelCharacter> characterList) {
         this.context = context;
         this.characterList = characterList;
         inflater = LayoutInflater.from(context);
-        //imageLoader = new ImageLoader(context);
+        imageLoader = new ImageLoader(context);
     }
 
     public class ViewHolder {
         TextView name;
+        ImageView thumbnail;
     }
 
     @Override
@@ -55,7 +57,10 @@ public class CharacterListViewAdapter extends BaseAdapter {
             holder = new ViewHolder();
             view = inflater.inflate(R.layout.listview_item_marvel_character, null);
             holder.name = (TextView) view.findViewById(R.id.nameValue);
+            holder.thumbnail = (ImageView) view.findViewById(R.id.coverImage);
+
             view.setTag(holder);
+
         } else {
             holder = (ViewHolder) view.getTag();
         }
@@ -68,6 +73,7 @@ public class CharacterListViewAdapter extends BaseAdapter {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, SingleItemView_Marvel_Character.class);
                 intent.putExtra("name", characterList.get(position).GetName());
+                intent.putExtra("imagePath", characterList.get(position).GetThumbnailPath());
 
                 // Start SingleItemView Class
                 context.startActivity(intent);
