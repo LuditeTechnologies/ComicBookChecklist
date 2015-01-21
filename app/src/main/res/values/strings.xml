@@ -26,6 +26,7 @@
     <string name="publisherLabel">Publisher</string>
     <string name="loadingMessage">Loading. Please wait...</string>
     <string name="title_activity_tester">tester</string>
+    <string name="title_activity_single_item_view_marvel_character">SingleItemViewMarvelCharacter</string>
     <string name="marvel_public_key">bcca9cb9dc7e995fc13914669c1c5083</string>
     <string name="marvel_private_key">bf3d95747452704076ed5abeae0c54a75862aa71</string>
     <string name="marvel_api_address">https://gateway.marvel.com/</string>

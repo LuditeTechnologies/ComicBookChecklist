@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,7 +19,6 @@ import com.luditetechnologies.comicbookchecklist.UI.SingleItemView_Marvel_Charac
 import com.luditetechnologies.comicbookchecklist.classes.MarvelCharacter;
 
 import java.io.InputStream;
-import java.net.URI;
 import java.util.List;
 
 public class CharacterListViewAdapter extends BaseAdapter {
@@ -74,11 +72,16 @@ public class CharacterListViewAdapter extends BaseAdapter {
 
         holder.name.setText(_characters.get(position).GetName());
 
-        if(_characters.get(position).GetThumbnailPath() != null && _characters.get(position).GetThumbnailExtension() != null) {
-            String fullImagePath = _characters.get(position).GetThumbnailPath() + "/portrait_xlarge." + _characters.get(position).GetThumbnailExtension();
-            Log.i("image_path_for " + _characters.get(position).GetName(), fullImagePath);
+        if(_characters.get(position).GetThumbnailPath_xlarge() != null && _characters.get(position).GetThumbnailExtension() != null) {
+            //String fullImagePath = _characters.get(position).GetThumbnailPath() + "/portrait_xlarge." + _characters.get(position).GetThumbnailExtension();
+            //Log.i("image_path_for " + _characters.get(position).GetName(), fullImagePath);
 
-            new DownloadImageTask(holder.thumbnail).execute(fullImagePath);
+            //new DownloadImageTask(holder.thumbnail).execute(fullImagePath);
+            try {
+                holder.thumbnail.setImageBitmap(_characters.get(position).GetThumbnail_xlarge());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }else{
             Log.i("image_path_for " + _characters.get(position).GetName(), "was skipped because of null");
         }
@@ -90,7 +93,7 @@ public class CharacterListViewAdapter extends BaseAdapter {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, SingleItemView_Marvel_Character.class);
                 intent.putExtra("name", _characters.get(position).GetName());
-                intent.putExtra("imagePath", _characters.get(position).GetThumbnailPath());
+                intent.putExtra("imagePath", _characters.get(position).GetThumbnailPath_xlarge());
 
                 // Start SingleItemView Class
                 context.startActivity(intent);

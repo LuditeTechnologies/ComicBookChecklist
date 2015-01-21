@@ -128,15 +128,20 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
         MarvelCharacter m = null;
         try {
             m = new MarvelCharacter(o.getInt("id"), o.getString("resourceURI"), o.getString("name"));
+
         } catch (Exception e) {
             Log.i("Character generation failed", e.getMessage());
         }
 
         try {
-            m.SetThumbnailPath(o.getJSONObject("thumbnail").getString("path"));
+            m.SetThumbnailPath_xlarge(o.getJSONObject("thumbnail").getString("path"));
+
+             //TODO: this call is me trying to speed up the thumbnail retrieval process
+            m.GetThumbnail_xlarge();
+
         } catch (Exception e) {
             Log.i("No thumbnail", m.GetName());
-            m.SetThumbnailPath(null);
+            m.SetThumbnailPath_xlarge(null);
         }
 
         try {

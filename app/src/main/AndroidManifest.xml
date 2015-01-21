@@ -47,12 +47,12 @@
             android:label="@string/title_activity_title_test_any" >
         </activity>
         <activity
-            android:name=".tester"
-            android:label="@string/title_activity_tester" >
-        </activity>
-        <activity
             android:name=".UI.activity_marvel_test"
             android:label="@string/title_activity_activity_marvel_test" >
+        </activity>
+        <activity
+            android:name=".UI.SingleItemView_Marvel_Character"
+            android:label="@string/title_activity_single_item_view_marvel_character" >
         </activity>
     </application>
 
