@@ -8,70 +8,70 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lookup Uploader"
+        android:text="Dashboard"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <Button
-            android:id="@+id/btnUploadPublishers"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="Upload Publishers" />
+        <!--<Button-->
+            <!--android:id="@+id/btnUploadPublishers"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Upload Publishers" />-->
 
 
-        <Button
-            android:id="@+id/btnUploadTitles"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="Upload Titles" />
+        <!--<Button-->
+            <!--android:id="@+id/btnUploadTitles"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Upload Titles" />-->
 
-        <Button
-            android:id="@+id/btnTestPublishersGet"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="Test Publishers" />
+        <!--<Button-->
+            <!--android:id="@+id/btnTestPublishersGet"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Test Publishers" />-->
 
 
-        <Button
-            android:id="@+id/btnTestTitlesGetAll"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="@string/test_titles" />
+        <!--<Button-->
+            <!--android:id="@+id/btnTestTitlesGetAll"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Test Titles All" />-->
 
-        <Button
-            android:id="@+id/btnTestTitlesGetBatman"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="@string/test_titles_batman" />
+        <!--<Button-->
+            <!--android:id="@+id/btnTestTitlesGetBatman"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Test Batman" />-->
 
-        <Button
-            android:id="@+id/btnTestTitlesGetSpiderman"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="@string/test_titles_spiderman" />
+        <!--<Button-->
+            <!--android:id="@+id/btnTestTitlesGetSpiderman"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Test Spiderman" />-->
 
-        <Button
-            android:id="@+id/btnTestTitlesGetAny"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="@string/test_titles_any" />
+        <!--<Button-->
+            <!--android:id="@+id/btnTestTitlesGetAny"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:text="Parse Test Any" />-->
 
         <Button
             android:id="@+id/btnTestMarvel"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:text="Test Marvel" />
+            android:text="Marvel Test Characters" />
 
     </LinearLayout>
 

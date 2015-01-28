@@ -23,7 +23,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ImageLoader {
+public class ImageLoaderxxx {
 
     MemoryCache memoryCache = new MemoryCache();
     FileCache fileCache;
@@ -32,7 +32,7 @@ public class ImageLoader {
     // Handler to display images in UI thread
     Handler handler = new Handler();
 
-    public ImageLoader(Context context) {
+    public ImageLoaderxxx(Context context) {
         fileCache = new FileCache(context);
         executorService = Executors.newFixedThreadPool(5);
     }

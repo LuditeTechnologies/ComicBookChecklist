@@ -1,6 +1,10 @@
 package com.luditetechnologies.comicbookchecklist.UI;
 
+import android.app.Application;
 import android.app.ProgressDialog;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -12,15 +16,22 @@ import android.widget.TextView;
 import com.luditetechnologies.comicbookchecklist.R;
 import com.luditetechnologies.comicbookchecklist.classes.MarvelCharacter;
 import com.luditetechnologies.comicbookchecklist.core.CharacterListViewAdapter;
+import com.luditetechnologies.comicbookchecklist.core.ComicBookChecklist_Application;
 import com.luditetechnologies.comicbookchecklist.core.MarvelClientRequest;
+import com.luditetechnologies.comicbookchecklist.core.MarvelContract;
 import com.luditetechnologies.comicbookchecklist.core.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
+import static com.luditetechnologies.comicbookchecklist.core.MarvelContract.*;
 
 
 public class activity_marvel_test extends ActionBarActivity implements AsyncResponse {
@@ -42,46 +53,28 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
 
     }
 
-    //    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_activity_marvel_test, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-
 
     //<editor-fold desc="Methods">
-    protected void startLoading() {
+    protected void startLoading(String message) {
         proDialog = new ProgressDialog(this);
         proDialog.setTitle(getString(R.string.app_name));
-        proDialog.setMessage(getString(R.string.loadingMessage));
+        proDialog.setMessage(message);
         proDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         proDialog.setCancelable(false);
         proDialog.show();
     }
 
     protected void stopLoading() {
-        proDialog.dismiss();
-        proDialog = null;
+        try {
+            proDialog.dismiss();
+            proDialog = null;
+        } catch (Exception e) {
+            Log.e("Error", e.getMessage());
+        }
     }
 
     private void GetAllCharacters() {
-        startLoading();
+        startLoading("Hold on. Loading Marvel characters");
 
         try {
             GetCharacters(_offset);
@@ -127,31 +120,49 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
     private MarvelCharacter GenerateCharacter(JSONObject o) throws JSONException {
         MarvelCharacter m = null;
         try {
-            m = new MarvelCharacter(o.getInt("id"), o.getString("resourceURI"), o.getString("name"));
+            if (!o.isNull("thumbnail")) {
+                m = new MarvelCharacter(o.getInt("id"), o.getString("name"), o.getJSONObject("thumbnail").getString("path"));
 
+                if (m.GetImageBasePath() != null) {
+                    try {
+                        m.GetImage(MarvelCharacter.ImageSize.PortraitXlarge);
+                        //m.GetImage(MarvelCharacter.ImageSize.Detail);
+                    } catch (Exception e) {
+                        Log.e("Error", "Error getting character images");
+                    }
+                }
+            } else {
+                m = new MarvelCharacter(o.getInt("id"), o.getString("name"), null);
+                //TODO: since there isn't a thumbnail path, should I call a default image?
+            }
         } catch (Exception e) {
             Log.i("Character generation failed", e.getMessage());
         }
 
         try {
-            m.SetThumbnailPath_xlarge(o.getJSONObject("thumbnail").getString("path"));
+            if (!o.isNull("thumbnail")) {
+                m.SetImageExtension(o.getJSONObject("thumbnail").getString("extension"));
+            }
 
-             //TODO: this call is me trying to speed up the thumbnail retrieval process
-            m.GetThumbnail_xlarge();
-
-        } catch (Exception e) {
-            Log.i("No thumbnail", m.GetName());
-            m.SetThumbnailPath_xlarge(null);
-        }
-
-        try {
-            m.SetThumbnailExtension(o.getJSONObject("thumbnail").getString("extension"));
         } catch (Exception e) {
             Log.i("No thumbnail extension", m.GetName());
-            m.SetThumbnailExtension(null);
+            m.SetImageExtension(null);
         }
 
         return m;
+    }
+
+    private Date GetDateFromJSON(String input) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss-SSSS");
+        Date rtn = null;
+        try {
+            rtn = sdf.parse(input);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return rtn;
     }
 
     @Override
@@ -168,6 +179,10 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
         JSONArray results;
 
         try {
+            MarvelDbHelper mDbHelper = new MarvelDbHelper(getApplicationContext());
+
+            SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
             base = new JSONObject(output);
             data = base.getJSONObject("data");
             results = data.getJSONArray("results");
@@ -179,19 +194,45 @@ public class activity_marvel_test extends ActionBarActivity implements AsyncResp
             SetMarvelAttribution(base.getString("attributionHTML"));
 
             for (int i = 0; i < results.length(); i++) {
+                ContentValues values = new ContentValues();
+                values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_MARVEL_ID, results.getJSONObject(i).getInt("id"));
+                values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_NAME, results.getJSONObject(i).getString("name"));
+                values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_DESCRIPTION, results.getJSONObject(i).getString("description"));
+                values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_MODIFIED, String.valueOf(GetDateFromJSON(results.getJSONObject(i).getString("modified"))));
+                values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_RESOURCEURI, results.getJSONObject(i).getString("resourceURI"));
+
+                try {
+                    values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_THUMBNAILPATH, results.getJSONObject(i).getJSONObject("thumbnail").getString("path"));
+                    values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_THUMBNAILEXTENSION, results.getJSONObject(i).getJSONObject("thumbnail").getString("extension"));
+                } catch (Exception e) {
+                    values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_THUMBNAILPATH, "null");
+                    values.put(MarvelContract.MarvelCharacter.COLUMN_NAME_THUMBNAILEXTENSION, "null");
+                }
+
+
+                // Insert the new row, returning the primary key value of the new row
+                long newRowId = db.insert(
+                        MarvelContract.MarvelCharacter.TABLE_NAME,
+                        "null",
+                        values);
+                Log.i("new character added", results.getJSONObject(i).getString("name"));
+
                 _characters.add(GenerateCharacter(results.getJSONObject(i)));
+
             }
 
             //TODO: uncomment the next line to get everything. I commented it out during development
-           if (_characters.size() < _characterTotal) {
-               _offset += MAX_CHARACTER_INCREMENT;
-               GetCharacters(_offset);
-           } else {
-             ShowUi();
-           }
+            if (_characters.size() < _characterTotal) {
+                _offset += MAX_CHARACTER_INCREMENT;
+                GetCharacters(_offset);
+            } else {
+                stopLoading();
+                ShowUi();
+            }
         } catch (Exception e) {
             e.printStackTrace();
             stopLoading();
+            ShowUi();
         }
     }
 

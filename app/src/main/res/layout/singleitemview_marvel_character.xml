@@ -3,14 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/nameValue"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:ellipsize="marquee"
-        android:text="CHARACTER NAME"
-        android:textColor="#ffff6e23" />
-
     <ImageView
         android:id="@+id/characterThumbnail"
         android:layout_width="fill_parent"
@@ -18,5 +10,12 @@
         android:contentDescription="Character Image"
         android:src="@drawable/portrait_xlarge_not_available" />
 
+    <TextView
+        android:id="@+id/nameValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:text="CHARACTER NAME"
+        android:textColor="#ffff6e23" />
 
 </RelativeLayout>

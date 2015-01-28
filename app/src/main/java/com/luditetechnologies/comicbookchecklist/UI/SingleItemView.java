@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.luditetechnologies.comicbookchecklist.core.ImageLoader;
 import com.luditetechnologies.comicbookchecklist.R;
 
 public class SingleItemView extends Activity {
@@ -15,8 +14,6 @@ public class SingleItemView extends Activity {
     String title;
     String publisher;
     Image coverImage;
-
-    ImageLoader imageLoader = new ImageLoader(this);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -32,5 +32,6 @@
     <string name="marvel_api_address">https://gateway.marvel.com/</string>
     <string name="title_activity_activity_marvel_test">activity_marvel_test</string>
 <string name="marvel_characters_url_base">http://gateway.marvel.com/v1/public/characters</string>
+    <string name="dashboardTitle">Dashboard</string>
 
 </resources>
