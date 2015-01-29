@@ -69,7 +69,6 @@ public class CharacterListViewAdapter extends BaseAdapter {
         holder.name.setText(_characters.get(position).GetName());
 
         try {
-            // holder.image.setImageBitmap(_characters.get(position).GetImage_xlarge());
             holder.image.setImageBitmap(_characters.get(position).GetImage(MarvelCharacter.ImageSize.PortraitXlarge));
 
         } catch (Exception e) {
@@ -84,7 +83,6 @@ public class CharacterListViewAdapter extends BaseAdapter {
 
                 try {
                     intent.putExtra("name", _characters.get(position).GetName());
-                    //intent.putExtra("characterImage", _characters.get(position).GetImage_detail());
                     intent.putExtra("characterImage",_characters.get(position).GetImage(MarvelCharacter.ImageSize.Detail));
                 } catch (Exception e) {
                     e.printStackTrace();

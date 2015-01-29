@@ -9,10 +9,12 @@ import android.util.Log;
 import com.luditetechnologies.comicbookchecklist.core.ComicBookChecklist_Application;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Random;
 
 public class MarvelCharacter {
 
@@ -52,10 +54,10 @@ public class MarvelCharacter {
 
         if (_imageBasePath != null) {
             try {
-//                GetImage(ImageSize.PortraitXlarge);
-//                GetImage(ImageSize.Detail);
+                GetImage(ImageSize.PortraitXlarge);
+                GetImage(ImageSize.Detail);
             } catch (Exception e) {
-                Log.e("Error", e.getMessage());
+                Log.e("Constructor Error", e.getMessage());
             }
         }
     }
@@ -69,6 +71,7 @@ public class MarvelCharacter {
     private String _name;
     private String _imageBasePath;
     private String _imageExtension = "jpg";
+    private String _description;
 
     private Bitmap _image_portrait_small = null;
     private Bitmap _image_portrait_medium = null;
@@ -95,7 +98,8 @@ public class MarvelCharacter {
     private Bitmap _image_fullSize = null;
 
     private String _resourceUri;
-    //private int _parcelData;
+
+    public final static String _fullImageDirectoryPath = Environment.getExternalStorageDirectory() + "/Android/data/" + ComicBookChecklist_Application.getContext().getPackageName() + "/Files";
 
     //</editor-fold>
 
@@ -112,6 +116,16 @@ public class MarvelCharacter {
     }
 
     //</editor-fold>
+    //<editor-fold desc="Description">
+    public String GetDescription() {
+        return _description;
+    }
+
+    public void SetDescription(String value) {
+        _description = value;
+    }
+
+    //</editor-fold>
     //<editor-fold desc="Name">
     public String GetName() {
         return _name;
@@ -122,6 +136,7 @@ public class MarvelCharacter {
     }
 
     //</editor-fold>
+
     //<editor-fold desc="Image Base Path">
     public String GetImageBasePath() {
         return _imageBasePath;
@@ -166,56 +181,8 @@ public class MarvelCharacter {
     }
 
     //</editor-fold>
-    //<editor-fold desc="Xlarge Image">
-//    private Bitmap GetImage_xlarge() throws Exception {
-//        Log.i("Info", "Getting " + _name + " image: Size: xlarge");
-//
-//        if (_image_portrait_xlarge == null) {
-//            if (_imageBasePath == null) {
-//                Log.e("Error", "Image base path is not set");
-//                throw new Exception("You must set the image base path before getting any images");
-//            }
-//
-//            try {
-//                //new DownloadImageTask(_image_portrait_xlarge, PortraitXlarge).execute(GetUrlForImage(PortraitXlarge));
-//            } catch (Exception e) {
-//                Log.e("Error", e.getMessage());
-//            }
-//        }
-//
-//        return _image_portrait_xlarge;
-//    }
 
-    private void SetImage_xlarge(Bitmap value) {
-        _image_portrait_xlarge = value;
-    }
 
-    //</editor-fold>
-    //<editor-fold desc="Detail Image">
-//    private Bitmap GetImage_detail() throws Exception {
-//        Log.i("Info", "Getting " + _name + " image: Size: detail");
-//
-//        if (_image_detail == null) {
-//            if (_imageBasePath == null) {
-//                Log.e("Error", "Image base path is not set");
-//                throw new Exception("You must set the image base path before getting any images");
-//            }
-//
-//            try {
-//                new DownloadImageTask(_image_detail, Detail).execute(GetUrlForImage(Detail));
-//            } catch (Exception e) {
-//                Log.e("Error", e.getMessage());
-//            }
-//        }
-//
-//        return _image_detail;
-//    }
-
-    private void SetImage_detail(Bitmap value) {
-        _image_detail = value;
-    }
-
-    //</editor-fold>
     //<editor-fold desc="Resource URI">
     public String GetResourceUri() {
         return _resourceUri;
@@ -234,7 +201,7 @@ public class MarvelCharacter {
     private void StoreImage(Bitmap image, ImageSize imageSize) {
         File pictureFile = getOutputMediaFile(imageSize);
         if (pictureFile == null) {
-            Log.d("storeImage", "Error creating media file. Check storage permission:");
+            Log.e("storeImage", "Error creating media file. Check storage permission:");
             return;
         }
 
@@ -244,14 +211,14 @@ public class MarvelCharacter {
             image.compress(Bitmap.CompressFormat.PNG, 90, fos);
             fos.close();
         } catch (FileNotFoundException e) {
-            Log.d("File not found", "File not found: " + e.getMessage());
+            Log.e("File not found", "File not found: " + e.getMessage());
         } catch (IOException e) {
-            Log.d("IO Exception", "Error accessing file: " + e.getMessage());
+            Log.e("IO Exception", "Error accessing file: " + e.getMessage());
         }
     }
 
     private File getOutputMediaFile(ImageSize imageSize) {
-        File mediaStorageDir = new File(Environment.getExternalStorageDirectory() + "/Android/data/" + ComicBookChecklist_Application.getContext().getPackageName() + "/Files");
+        File mediaStorageDir = new File(_fullImageDirectoryPath);
 
         if (!mediaStorageDir.exists()) {
             if (!mediaStorageDir.mkdirs()) {
@@ -266,35 +233,62 @@ public class MarvelCharacter {
         return mediaFile;
     }
 
-    public Bitmap GetImage(ImageSize imageSize) throws Exception {
-        Log.i("Info", "Getting " + _name + " image: Size: " + imageSize);
-        if (_imageBasePath == null) {
-            Log.e("Error", "Image base path is not set");
-            throw new Exception("You must set the image base path before getting any images");
-        }
+    public Bitmap GetImageFromDevice(String filename) {
 
-        Bitmap image = null;
+        Bitmap thumbnail = null;
 
         try {
-            switch (imageSize) {
-                case PortraitXlarge:
-                    new DownloadImageTask(_image_portrait_xlarge, imageSize).execute(GetUrlForImage(imageSize));
-                    image = _image_portrait_xlarge;
-                    break;
-
-                case Detail:
-                    new DownloadImageTask(_image_detail, imageSize).execute(GetUrlForImage(imageSize));
-                    image = _image_detail;
-                    break;
-
-                case FullSize:
-                    new DownloadImageTask(_image_fullSize, imageSize).execute(GetUrlForImage(imageSize));
-                    image = _image_fullSize;
-                    break;
-
-            }
+            Log.i("GetImageFromDevice() A: ",_fullImageDirectoryPath + "/" + filename);
+            thumbnail = BitmapFactory.decodeFile(_fullImageDirectoryPath + "/" + filename);
         } catch (Exception e) {
-            Log.e("Error", e.getMessage());
+            Log.e("GetImageFromDevice() on external storage", e.getMessage());
+        }
+
+        if (thumbnail == null) {
+            try {
+                Log.i("GetImageFromDevice() B: ", ComicBookChecklist_Application.getContext().getFileStreamPath(filename).toString());
+                File filePath = ComicBookChecklist_Application.getContext().getFileStreamPath(filename);
+                FileInputStream fi = new FileInputStream(filePath);
+                thumbnail = BitmapFactory.decodeStream(fi);
+            } catch (Exception ex) {
+                Log.e("GetImageFromDevice()", ex.getMessage());
+            }
+        }
+        return thumbnail;
+    }
+
+    public Bitmap GetImage(ImageSize imageSize) throws Exception {
+        //try to get the image from the device first
+        Bitmap image = GetImageFromDevice("MarvelCharacter_" + _marvelId + "_" + imageSize + "." + _imageExtension);
+
+        //if the image wasn't found, download it to the device
+        if (image == null) {
+            Log.i("Character image not on device", "Starting download for " + _name + ", image size " + imageSize);
+
+            if (_imageBasePath == null) {
+                Log.e("Error", "Image base path is not set");
+                throw new Exception("You must set the image base path before getting any images");
+            }
+
+            try {
+                new DownloadImageTask(imageSize).execute(GetUrlForImage(imageSize));
+
+                switch (imageSize) {
+                    case PortraitXlarge:
+                        image = _image_portrait_xlarge;
+                        break;
+
+                    case Detail:
+                        image = _image_detail;
+                        break;
+
+                    case FullSize:
+                        image = _image_fullSize;
+                        break;
+                }
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+            }
         }
 
         return image;
@@ -303,14 +297,12 @@ public class MarvelCharacter {
     //</editor-fold>
 
 
+    //<editor-fold desc="Classes">
 
-
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        Bitmap _bitmap;
+    private  class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageSize _imageSize;
 
-        public DownloadImageTask(Bitmap bitmap, ImageSize imageSize) {
-            _bitmap = bitmap;
+        public DownloadImageTask(ImageSize imageSize) {
             _imageSize = imageSize;
         }
 
@@ -327,7 +319,6 @@ public class MarvelCharacter {
         }
 
         protected void onPostExecute(Bitmap result) {
-
             try {
                 StoreImage(result, _imageSize);
             } catch (Exception e) {
@@ -337,7 +328,6 @@ public class MarvelCharacter {
             //TODO: this seems hokey to me. How can I make this better?
             switch (_imageSize) {
                 case PortraitXlarge:
-                    _bitmap = result;
                     _image_portrait_xlarge = result;
                     break;
                 case Detail:
@@ -347,7 +337,9 @@ public class MarvelCharacter {
                     _image_fullSize = result;
                     break;
             }
-
         }
     }
+
+    //</editor-fold>
+
 }
